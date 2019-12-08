@@ -16,8 +16,8 @@ library(ggplot2)
 library(purrr)
 library(recipes)
 
-votes_tbl_one = readr::read_csv("CloneDetection/usersUpAndDownVotesAnswers_1.csv")
-votes_tbl_two = readr::read_csv("CloneDetection/usersUpAndDownVotesAnswers_2.csv")
+votes_tbl_one = readr::read_csv("Data_CSV_CloneDetection/usersUpAndDownVotesAnswers_1.csv")
+votes_tbl_two = readr::read_csv("Data_CSV_CloneDetection/usersUpAndDownVotesAnswers_2.csv")
 
 AnswerersUpAndDownVotes <- rbind(votes_tbl_one, votes_tbl_two)
 #df %>% add_row(hello = "hola", goodbye = "ciao") to add single row use this for tidyverse.
@@ -101,7 +101,7 @@ for (row in 1:nrow(uniqueUsersByPost)) {
     ) 
 
 # 7.2 export to CSV ----
- CaclVote %>% write_csv("CloneDetection/CalculatedAnswerersUpvote.csv")
+ CaclVote %>% write_csv("Data_CSV_CloneDetection/CalculatedAnswerersUpvote.csv")
 
 
 

@@ -19,7 +19,7 @@ library(recipes)
 library(entropy)
 
 #############------------------Answers-------------##########
-Mix_Model_csv_tbl = readr::read_csv("CloneDetection/A_Data_Mix_Model_CloneDetection.csv")
+Mix_Model_csv_tbl = readr::read_csv("Data_CSV_CloneDetection/A_Data_Mix_Model_CloneDetection.csv")
 
 #Mix_Model_csv_tbl = readr::read_csv("/Users/manikhossain/Downloads/Code Clone Paper/Data_Mix_Model_CloneDetection.csv") 
 # UPPER LINE WILL ALSO BE WORKED BUT I KEEP THE PROJECTS FILE IN THE SAME FOLDER
@@ -112,7 +112,7 @@ extractdataZeroVariance = dat
     #%>%
     #filter((X8=="0.00")) 
     # %>% count() = 835
-extractdataZeroVariance %>% write_csv("ExportedDatafromR/AnswersExportZeroVarianceFunctions.csv")
+extractdataZeroVariance %>% write_csv("Data_ExportedDatafromR_Zero_Variance/AnswersExportZeroVarianceFunctions.csv")
 
 AnswerFunctionsDF = dat %>% 
         rename(
@@ -127,7 +127,7 @@ AnswerFunctionsDF = dat %>%
             ShanonEntropy = X11,
             NorShanonEntropy = X12
         ) 
-AnswerFunctionsDF %>% write_csv("ExportedDatafromR/AnswersExportZeroVarianceGroups.csv")
+AnswerFunctionsDF %>% write_csv("Data_ExportedDatafromR_Zero_Variance/AnswersExportZeroVarianceGroups.csv")
 
 boxplot(as.numeric(AnswerFunctionsDF$EachGroup_25Percentile), 
         main = "Answers Functions: Boxlpot with each group 25% (PERCENTILE)",xlab = "25Percentile")
@@ -191,7 +191,7 @@ for (i in 1:852){
 
 extractdataZeroVariance = dat %>%
     filter((X8=="0")) #184 with zero variance
-extractdataZeroVariance %>% write_csv("ExportedDatafromR/ExportZeroVarianceGroupsBlocks.csv")
+extractdataZeroVariance %>% write_csv("Data_ExportedDatafromR_Zero_Variance/ExportZeroVarianceGroupsBlocks.csv")
 
 
 AnswerFunctionsDF = dat %>% 
@@ -206,7 +206,7 @@ AnswerFunctionsDF = dat %>%
         EachGroup_25Percentile = X3,
         ShanonEntropy = X11
     ) 
-AnswerFunctionsDF %>% write_csv("ExportedDatafromR/AnswersExportZeroVarianceGroupsBlocks.csv")
+AnswerFunctionsDF %>% write_csv("Data_ExportedDatafromR_Zero_Variance/AnswersExportZeroVarianceGroupsBlocks.csv")
 
 boxplot(as.numeric(AnswerFunctionsDF$EachGroup_25Percentile), 
         main = "Answers Blocks: Boxlpot with each group 25% (PERCENTILE)",xlab = "25Percentile")
@@ -232,7 +232,7 @@ boxplot(as.numeric(AnswerFunctionsDF$ShanonEntropy),
 
 
 ##### ------- Questions Blocks Clones  ---------- #######
-Q_Mix_Model_csv_tbl = readr::read_csv("CloneDetection/Q_Data_Mix_Model_CloneDetection.csv")
+Q_Mix_Model_csv_tbl = readr::read_csv("Data_CSV_CloneDetection/Q_Data_Mix_Model_CloneDetection.csv")
 distinctClsFunc <- count(Q_Mix_Model_csv_tbl %>%
                              filter((Granularity == 'Blocks')) %>%
                              distinct(CloneClassType)) 

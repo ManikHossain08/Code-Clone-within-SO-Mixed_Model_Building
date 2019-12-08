@@ -29,15 +29,15 @@ library(nlme)
 library(plotMCMC)
 
 
-QuestionClonedFactorsPart1 = readr::read_csv("CloneDetection/QuestionClonedFactorsData1.csv")
-QuestionClonedFactorsPart2 = readr::read_csv("CloneDetection/QuestionClonedFactorsData2.csv")
+QuestionClonedFactorsPart1 = readr::read_csv("Data_CSV_CloneDetection/QuestionClonedFactorsData1.csv")
+QuestionClonedFactorsPart2 = readr::read_csv("Data_CSV_CloneDetection/QuestionClonedFactorsData2.csv")
 
 QuestionClonedFactors <- rbind(QuestionClonedFactorsPart1, QuestionClonedFactorsPart2)
 
 Questions_Mix_Model_tbl =QuestionClonedFactorsPart1 #QuestionClonedFactors
 
-ZeroVariance_Functions = readr::read_csv("ExportedDatafromR/QuestionsExportZeroVarianceFunctions.csv")
-ZeroVariance_Blocks = readr::read_csv("ExportedDatafromR/QuestionsExportZeroVarianceGroupsBlocks.csv")
+ZeroVariance_Functions = readr::read_csv("Data_ExportedDatafromR_Zero_Variance/QuestionsExportZeroVarianceFunctions.csv")
+ZeroVariance_Blocks = readr::read_csv("Data_ExportedDatafromR_Zero_Variance//QuestionsExportZeroVarianceGroupsBlocks.csv")
 
 # data wrangglingin 
 NoVarianceBlocks = ZeroVariance_Blocks %>%

@@ -31,9 +31,9 @@ library(nlme)
 library(plotMCMC)
 
 
-Answers_Mix_Model_tbl = readr::read_csv("CloneDetection/asnwersFactorsNoZeroVariance.csv")
-ZeroVariance_Functions = readr::read_csv("ExportedDatafromR/AnswersExportZeroVarianceFunctions.csv")
-ZeroVariance_Blocks = readr::read_csv("ExportedDatafromR/AnswersExportZeroVarianceGroupsBlocks.csv")
+Answers_Mix_Model_tbl = readr::read_csv("Data_CSV_CloneDetection/asnwersFactorsNoZeroVariance.csv")
+ZeroVariance_Functions = readr::read_csv("Data_ExportedDatafromR_Zero_Variance/AnswersExportZeroVarianceFunctions.csv")
+ZeroVariance_Blocks = readr::read_csv("Data_ExportedDatafromR_Zero_Variance/AnswersExportZeroVarianceGroupsBlocks.csv")
 explanatoryVariable = Answers_Mix_Model_tbl
 
 # data wrangglingin 
