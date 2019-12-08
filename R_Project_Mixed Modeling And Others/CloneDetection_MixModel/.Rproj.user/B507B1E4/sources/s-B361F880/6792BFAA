@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1570985995194.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "6792BFAA",
+    "lastKnownWriteTime" : 1575650268,
+    "last_content_update" : 1575650268606,
+    "path" : "~/SOCloneDetection_R_Project/CloneDetection_MixModel/Answers_Mix-Model.R",
+    "project_path" : "Answers_Mix-Model.R",
+    "properties" : {
+        "cursorPosition" : "252,0",
+        "scrollLine" : "240",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
