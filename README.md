@@ -3,10 +3,17 @@ Abstract—Duplicate codes from online sources are code frag- ments which are co
 
 
 # Requirements
-R Studio
-NiCad clone detection tool
+- R Studio
+- NiCad clone detection tool
 
 # Research questions
 
-RQ1: What are the factors that affects the vote differences of each cloned Questions (i.e., cloned in terms of code snippets)?
-RQ2: What are the factors that affects the votes differences of each cloned Answers (i.e., cloned in terms of code snippets)?
+- RQ1: What are the factors that affects the vote differences of each cloned Questions (i.e., cloned in terms of code snippets)?
+- RQ2: What are the factors that affects the votes differences of each cloned Answers (i.e., cloned in terms of code snippets)?
+
+# Data source
+- Stack Exchange data dump: https://archive.org/details/stackexchange
+- NiCad tool: http://www.txl.ca/nicaddownload.html
+
+# For any questions
+Please send email to manik.ruet08@gmail.com
