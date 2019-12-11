@@ -62,3 +62,7 @@ and Grunality = 'Functions'
 
 delete from AcceptedQuestionsClone where CloneClassnumber in (select X1 from ZeroVarAnswerBlocks)
 and Grunality = 'Blocks'
+                                
+--- We did data wranggling or cleanning for Questions as well using this same query by chaning the name of TABLE and COLUMNS NAME                           
+                                
+                                
