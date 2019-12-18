@@ -15,5 +15,8 @@ Abstract—Duplicate codes from online sources are code frag- ments which are co
 - Stack Exchange data dump: https://archive.org/details/stackexchange
 - NiCad tool: http://www.txl.ca/nicaddownload.html
 
+# Filtered Q&A in number with calculation
+https://docs.google.com/spreadsheets/d/1h_VrUWL-gvabVPyXS61s3pFNrOb80IouSP5Zwc3mOew/edit#gid=2100088724
+
 # For any questions
 Please send email to manik.ruet08@gmail.com
